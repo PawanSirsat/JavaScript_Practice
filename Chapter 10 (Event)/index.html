@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Style for the container */
+      .container {
+        display: flex; /* Use flexbox for layout */
+        justify-content: space-between; /* Put space between the two divs */
+        align-items: stretch; /* Vertically center the divs */
+        width: 100%; /* Take up the full width of the viewport */
+        height: 100vh; /* Take up the full height of the viewport */
+        background-color: rgb(237, 236, 210);
+      }
+
+      /* Style for the left div */
+      .left-div {
+        width: 45%; /* Adjust the width as needed */
+        padding: 20px; /* Add padding for spacing */
+        background-color: #6dd47e; /* Background color for the left div */
+        color: #212842; /* Text color */
+      }
+
+      /* Style for the right div */
+      .right-div {
+        width: 45%; /* Adjust the width as needed */
+        padding: 20px; /* Add padding for spacing */
+        background-color: #6dd47e; /* Background color for the right div */
+        color: #212842; /* Text color */
+      }
+    </style>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="color.css" />
+
+  <body>
+    <div class="container">
+      <div class="left-div">
+        <h1>Add New Color</h1>
+
+        <input
+          id="coloradd"
+          type="text"
+          class="styled-input"
+          placeholder="Add new Color"
+        />
+        <button id="applyClass">Add</button>
+        <p id="elementToStyle" class="stl">Change My Color</p>
+
+        <h2>UserDefined Color List :</h2>
+        <p id="new" class="cr2"></p>
+      </div>
+      <div class="right-div">
+        <h1>Change Color</h1>
+        <input
+          id="colorinput"
+          type="text"
+          class="styled-input"
+          placeholder="Enter Color Name"
+        />
+
+        <br />
+        <br />
+        <button class="btn">Apply</button>
+        <button class="btn2">Reset Color</button>
+
+        <div class="overlay" id="overlay"></div>
+
+        <div class="alert" id="alert">
+          <div class="alert-content">
+            <span class="close" id="closeAlert">&times;</span>
+            <h3>Alert Box</h3>
+            <p id="validalert"></p>
+            <button id="confirmAlert" onclick="hideAlert()">OK</button>
+          </div>
+        </div>
+        <p id="style1" class="stl">Change my color</p>
+
+        <button id="printClassNames">Show PreDefined Color</button>
+
+        <h2>PreDefined Color List :</h2>
+        <p id="new2" class="cr"></p>
+      </div>
+    </div>
+
+    <script src="./event.js"></script>
+    <script src="./addcolor.js"></script>
+  </body>
+</html>

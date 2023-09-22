@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Alert</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button onclick="showAlert()">Show Alert</button>
+
+    <!-- The alert box -->
+    <div class="alert">
+      <p>This is an alert box.</p>
+      <button class="close" onclick="hideAlert()">OK</button>
+    </div>
+
+    <!-- JavaScript to show and hide the alert box -->
+    <script>
+      function showAlert() {
+        document.querySelector('.alert').style.display = 'block'
+      }
+
+      function hideAlert() {
+        document.querySelector('.alert').style.display = 'none'
+      }
+    </script>
+  </body>
+</html>
