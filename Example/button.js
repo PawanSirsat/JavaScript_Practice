@@ -3,4 +3,3 @@ document.querySelectorAll('.btn').forEach((item) => {
 })
 
 let name = 'Pawan'
-let name2 = name
