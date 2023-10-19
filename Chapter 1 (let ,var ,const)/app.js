@@ -5,6 +5,7 @@ let a = 'pawan'
 a = 'aniket'
 
 const b = 56
+b = 5
 {
   let b = 'this'
   console.log(b)
