@@ -1,9 +1,13 @@
-let a = null;
-let b = undefined;
-let c = Symbol("I'm Symbol")
-let d = true
-let e = BigInt("560")
-let f = 63
-let g = "String"
+console.log('Javascript var, let, const')
 
-console.log(a, b, c, d, e, f ,g);
+//Blocked Scope Varibles
+let a = 'pawan'
+a = 'aniket'
+
+const b = 56
+{
+  let b = 'this'
+  console.log(b)
+}
+console.log(a)
+console.log(b)
