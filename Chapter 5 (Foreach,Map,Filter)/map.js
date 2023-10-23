@@ -1,0 +1,11 @@
+const numbers = [1, 2, 3, 4]
+
+const doubled = numbers.map((num) => num * 2)
+console.log(doubled) // Output: [2, 4, 6, 8]
+let a = numbers.map((num, index, array) => {
+  console.log(num, index, array[index], array)
+  return num + 1
+})
+
+console.log(numbers)
+console.log(a)
